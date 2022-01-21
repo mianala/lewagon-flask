@@ -6,6 +6,6 @@ app = Flask(__name__)
 # unrelated in master
 @app.route('/')
 def home():
-    return jsonify({'roll':1})
+    return jsonify({'roll':0})
 
 # from unrelated
