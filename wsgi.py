@@ -14,7 +14,14 @@ if sentry_dsn:
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+
+
+from models import Product
+from flask_migrate import Migrate
+
+migrate = Migrate(app, db)
 
 @app.route('/')
 def home():

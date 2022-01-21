@@ -8,6 +8,7 @@ flask = "*"
 gunicorn = "*"
 sentry-sdk = {extras = ["flask"], version = "*"}
 flask-sqlalchemy = "*"
+flask-migrate = "*"
 
 [dev-packages]
 nose = "*"
