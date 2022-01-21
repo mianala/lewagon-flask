@@ -19,4 +19,4 @@ def home():
 
 @app.route('/error')
 def error():
-    return {}
+    return "hei!"
