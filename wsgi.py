@@ -19,3 +19,4 @@ db = SQLAlchemy(app)
 @app.route('/')
 def home():
     return jsonify({'roll':0})
+# push
